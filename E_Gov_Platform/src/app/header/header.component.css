@@ -1,0 +1,75 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .govt-of-india, .ministry-name {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .search-bar button {
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+  }
+  
+  /* Auth buttons */
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  
+  .auth-buttons .login-btn, .auth-buttons .signup-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .auth-buttons .login-btn {
+    background-color: #28841c;
+    color: white;
+  }
+  
+  .auth-buttons .signup-btn {
+    background-color: #28841c;
+    color: white;
+  }
+  
+  .auth-buttons .login-btn:hover {
+    background-color: #06bc12;
+  }
+  
+  .auth-buttons .signup-btn:hover {
+    background-color: #06bc12;
+  }
+  .left{
+    display: flex;
+    
+  }
+  

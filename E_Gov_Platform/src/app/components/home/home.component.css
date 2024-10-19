@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 10px;
+}
+.left img {
+  height: 75%;
+   
+  float: end;
+  filter: drop-shadow(4px 6px 4px rgba(70, 68, 68, 0.341));
+}
+.right {
+  text-align: justify;
+  max-height: 100vh;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Stretch all items to match the tallest one */
+  gap: 20px; /* Space between the sections */
+}
+
+.main {
+  flex: 1; /* Make each section take up an equal amount of space */
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+  display: flex;
+  flex-direction: column; /* Allow content to stack vertically */
+}
+
+.main h3 {
+  margin-top: 0;
+}
+
+.main .content {
+  flex-grow: 1; /* Make the content take up the remaining vertical space */
+}
+
+.more-news {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}

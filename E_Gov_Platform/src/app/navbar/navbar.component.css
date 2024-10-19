@@ -1,0 +1,22 @@
+.navbar1 {
+    background-color: #10c525;
+    padding: 10px;
+  }
+  
+  .navbar1 ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar1 ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  .navbar1 ul li a:hover {
+    background-color: #02a212;
+  }
+  
