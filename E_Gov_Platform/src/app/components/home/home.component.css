@@ -53,3 +53,102 @@ body {
   border: none;
   cursor: pointer;
 }
+.schemes-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.find-button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.schemes-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.card {
+  background-color: #e6fff2;
+  padding: 30px;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card h2 {
+  font-size: 36px;
+  color: #000;
+}
+
+.card p {
+  font-size: 16px;
+  color: #000;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* about */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  color: #2ca342;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.btn-view-more {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-view-more:hover {
+  background-color: #218838;
+}
+
+.about-video {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.about-video video {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}

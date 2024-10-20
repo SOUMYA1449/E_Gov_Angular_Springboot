@@ -7,16 +7,47 @@
   </head>
   <body>
     <app-scroolimage></app-scroolimage>
-    <div class="data">
-      <div class="main">
-        <app-news-highlights></app-news-highlights>
-      </div>
-      <div class="main">
-        <app-information></app-information>
-      </div>
-      <div class="main">
-        <app-activities></app-activities>
+    <br><hr>
+    <div class="schemes-container">
+      <h2>#GOVERNMENTSCHEMES / #SCHEMESFORYOU</h2>
+      <button class="find-button">Find Schemes For You →</button>
+      <div class="schemes-cards">
+        <div class="card" routerLink="/total-schemes">
+          <h2>2670+</h2>
+          <p>Total Schemes →</p>
+        </div>
+        <div class="card" routerLink="/central-schemes">
+          <h2>520+</h2>
+          <p>Central Schemes →</p>
+        </div>
+        <div class="card" routerLink="/states-schemes">
+          <h2>2150+</h2>
+          <p>States/UTs Schemes →</p>
+        </div>
       </div>
     </div>
+    <hr>
+    <br>
+    <div class="about-section">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>
+          myScheme is a National Platform that aims to offer one-stop search and discovery of the Government schemes.
+        </p>
+        <p>
+          It provides an innovative, technology-based solution to discover scheme information based upon the eligibility of the citizen.
+        </p>
+        <p>
+          The platform helps the citizen to find the right Government schemes for them. It also guides on how to apply for different Government schemes. Thus no need to visit multiple Government websites.
+        </p>
+        <a href="about" class="btn-view-more">View More <span>→</span></a>
+      </div>
+    
+      <div class="about-video">
+        <video src="assets/image/scheme.mp4" controls ></video>
+      </div>
+    </div>
+    
+    
   </body>
 </html>

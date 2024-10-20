@@ -14,6 +14,9 @@ import { SchemesComponent } from './components/schemes/schemes.component';
 import { ServicesComponent } from './components/services/services.component';
 import { DocumentsComponent } from './components/documents/documents.component';
 import { GravianceComponent } from './components/graviance/graviance.component';
+import { StatesSchemesComponent } from './components/home/states-schemes/states-schemes.component';
+import { TotalSchemesComponent } from './components/home/total-schemes/total-schemes.component';
+import { CentralSchemesComponent } from './components/home/central-schemes/central-schemes.component';
 
 export const routes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -32,6 +35,10 @@ export const routes: Routes = [
     {path:'services',component:ServicesComponent},
     {path:'documents',component:DocumentsComponent},
     {path:'graviance',component:GravianceComponent},
+    { path: 'total-schemes', component: TotalSchemesComponent },
+    { path: 'central-schemes', component: CentralSchemesComponent },
+    { path: 'states-schemes', component: StatesSchemesComponent },
+    
 
    // Default route
     {
