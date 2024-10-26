@@ -15,7 +15,7 @@ import { FooterComponent } from "./footer/footer.component";
     HeaderComponent,
     FormsModule,
     CommonModule,
-    FooterComponent
+    FooterComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

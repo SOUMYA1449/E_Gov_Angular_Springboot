@@ -9,3 +9,4 @@ export const appConfig = {
     provideClientHydration(),
   ]
 };
+export class AppServerModule {}

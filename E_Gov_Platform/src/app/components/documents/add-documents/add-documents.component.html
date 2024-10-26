@@ -1,0 +1,53 @@
+<div class="form-container">
+  <div class="form_controler">
+    <h2>Add Document</h2>
+    <h6 *>{{ success }}</h6>
+    <form [formGroup]="myForm" (ngSubmit)="successmsg()">
+      <label for="id">Document ID</label>
+      <input formControlName="documentId" type="text" placeholder="Enter Document ID" required/>
+      <label for="type">Document Type</label>
+      <select formControlName="documentType" id="type" required>
+        <option value="" disabled>Select Document Type...</option>
+        <option value="aadhar">Aadhar</option>
+        <option value="pan">PAN</option>
+        <option value="dl">Driving License</option>
+      </select>
+      <label for="img">Image</label>
+      <input formControlName="documentImage" type="file" required />
+      <div class="check">
+        <input formControlName="confirmation" type="checkbox" required />
+        <span> Details uploaded by me are correct.</span>
+      </div>
+      <button type="submit" [disabled]="myForm.invalid">Add</button>
+    </form>
+  </div>
+</div>
+<div class="image-dc">
+  <div class="image-container">
+    <div class="image"><img src="assets/image/aadhaar_english_logo.svg" alt="aadhar" /> <span>Aadhar</span></div>
+    <div class="image"><img src="assets/image/pan.jpg" alt="aadhar"  width="79px" height="49px"/> <span>Pan</span></div>
+    <div class="image">
+      <img src="assets/image/dl.svg" alt="aadhar" /> <span>Driving License</span>
+    </div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Voter Id</span></div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Passport</span></div>
+  </div>
+  <div class="image-container">
+    <div class="image"><img src="" alt="aadhar" /> <span>Aadhar</span></div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Pan</span></div>
+    <div class="image">
+      <img src="" alt="aadhar" /> <span>Driving License</span>
+    </div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Voter Id</span></div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Passport</span></div>
+  </div>
+  <div class="image-container">
+    <div class="image"><img src="" alt="aadhar" /> <span>Aadhar</span></div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Pan</span></div>
+    <div class="image">
+      <img src="" alt="aadhar" /> <span>Driving License</span>
+    </div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Voter Id</span></div>
+    <div class="image"><img src="" alt="aadhar" /> <span>Passport</span></div>
+  </div>
+</div>

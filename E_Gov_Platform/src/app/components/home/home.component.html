@@ -6,13 +6,15 @@
     <title>Document</title>
   </head>
   <body>
-    <app-scroolimage></app-scroolimage>
+    <!-- Scrolling banner -->
+     <app-image-carousel></app-image-carousel>
+     
     <br><hr>
     <div class="schemes-container">
       <h2>#GOVERNMENTSCHEMES / #SCHEMESFORYOU</h2>
-      <button class="find-button">Find Schemes For You →</button>
+      <button class="find-button" routerLink="/schemes">Find Schemes For You →</button>
       <div class="schemes-cards">
-        <div class="card" routerLink="/total-schemes">
+        <div class="card" routerLink="/schemes">
           <h2>2670+</h2>
           <p>Total Schemes →</p>
         </div>
