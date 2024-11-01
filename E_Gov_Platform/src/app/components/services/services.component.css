@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073e6; /* Dark blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Larger font for header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #005bb5; /* Darker blue on hover */
+    border-radius: 5px;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: white; /* Blue background for hero */
+    color: white; /* White text */
+    padding: 40px; /* More padding for emphasis */
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    font-size: 2.5em; /* Larger font for the hero heading */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger font for the hero paragraph */
+}
+
+/* Service List Styles */
+.service-list {
+    margin-bottom: 40px;
+}
+
+.service-item {
+    background-color: white; /* White background for service items */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.service-item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+    color: black; /* Set subheadings (h3) to black */
+}
+
+.service-item a {
+    color: #0073e6; /* Set links to blue */
+    text-decoration: none;
+    font-weight: bold; /* Bold links */
+}
+
+.service-item a:hover {
+    text-decoration: underline;
+}
+
+.service-item button {
+    background-color: #10c525; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.service-item button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* FAQ Section Styles */
+/* FAQ Section Styles */
+.faq {
+    background-color: #f9f9f9; /* Light gray background for the FAQ section */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.faq h2 {
+    font-size: 2em; /* Larger font size for the FAQ heading */
+    color: #0073e6; /* Blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.faq-item {
+    background-color: white; /* White background for each FAQ item */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.faq-item h3 {
+    color: #333; /* Dark color for FAQ question headings */
+    cursor: pointer; /* Indicate that the heading is clickable */
+}
+
+.faq-item:hover {
+    background-color: #e9f5ff; /* Light blue background on hover */
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background-color: #f9f9f9; /* Light gray background for the contact section */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-info h2 {
+    font-size: 2em; /* Larger font size for the Contact Us heading */
+    color: #0073e6; /* Blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-info p {
+    margin-bottom: 10px; /* Space between paragraphs */
+    color: #555; /* Dark gray for text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq h2, .contact-info h2 {
+        font-size: 1.5em; /* Smaller heading size on smaller screens */
+    }
+    
+    .faq-item {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+    
+    .contact-info {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}
+
