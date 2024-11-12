@@ -1,1 +1,27 @@
-<p>tenders works!</p>
+<div class="schemes-section">
+    <!-- Tab Navigation -->
+    <ul class="tabs">
+      <a href="tenders"><li class="tab active">All Tenders</li></a>
+      
+    </ul>
+  
+    
+  
+   
+    <p class="scheme-count">Total <strong >{{ allTender.length }}</strong> schemes available</p>
+  
+    
+    <div *ngFor="let scheme of allTender; let i = index" class="scheme-item" >
+      <div class="scheme-name">
+        <h3>{{ scheme.tname }}</h3>
+  
+        <button class="apply-button" *ngIf="user">Apply</button>
+      </div>
+      
+      <p class="scheme-state">{{ scheme.ttype }}</p>
+      
+  
+      
+    </div>
+  </div>
+  

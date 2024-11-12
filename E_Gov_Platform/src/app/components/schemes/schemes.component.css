@@ -76,3 +76,23 @@
 
   }
   
+  .scheme-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .apply-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Text size */
+  }
+  
+  .apply-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  

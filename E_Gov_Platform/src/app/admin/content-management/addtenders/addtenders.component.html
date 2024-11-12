@@ -1,0 +1,90 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <form [formGroup]="addTender" (ngSubmit)="onSubmit()">
+            <h3 class="text-center text-success">Add Tenders</h3>
+            <div class="form-group">
+              <label for="name">Tender Name:</label>
+              <input
+                id="name"
+                formControlName="tname"
+                type="text"
+                class="form-control"
+                required
+              />
+              <div
+                *ngIf="
+                  addTender.get('tname')?.invalid &&
+                  addTender.get('tname')?.touched
+                "
+                class="text-danger"
+              >
+                <small *ngIf="addTender.get('tname')?.errors?.['required']"
+                  >TenderName is required.</small
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ttype"> Tender Type:</label>
+              <input
+                id="ttype"
+                formControlName="ttype"
+                type="text"
+                class="form-control"
+                required
+              />
+              <div
+                *ngIf="
+                  addTender.get('ttype')?.invalid &&
+                  addTender.get('ttype')?.touched
+                "
+                class="text-danger"
+              >
+                <small *ngIf="addTender.get('ttype')?.errors?.['required']"
+                  >type is required.</small
+                >
+                <small *ngIf="addTender.get('ttype')?.errors?.['type']"
+                  >type must be valid.</small
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bidamount">Bid Amount:</label>
+                <input
+                  id="bidamount"
+                  formControlName="bidamount"
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  required
+                />
+                <div
+                  *ngIf="addTender.get('bidamount')?.invalid && addTender.get('bidamount')?.touched"
+                  class="text-danger"
+                >
+                  <small *ngIf="addTender.get('bidamount')?.errors?.['required']">Bid Amount is required.</small>
+                  <small *ngIf="addTender.get('bidamount')?.errors?.['pattern']">Please enter a valid amount.</small>
+                </div>
+              </div>
+  
+            <button
+              type="submit"
+              class="btn btn-success"
+              [disabled]="addTender.invalid"
+            >
+              Add
+            </button>
+            <div class="home mt-2">
+                <span>Go Home?</span>
+                <Button class="btn" routerLink="/adminhome">Home</Button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

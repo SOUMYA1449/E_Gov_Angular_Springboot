@@ -1,33 +1,114 @@
-<div class="signup-container">
-  <h2>Signup</h2>
-  <form>
-    <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Enter your name" required />
+<div class="container">
+  <h2 class="mt-5 text-center text-success ">Sign Up</h2>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="mt-4">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        formControlName="name"
+        type="text"
+        class="form-control"
+        required
+      />
+      <div
+        *ngIf="
+          signupForm.get('name')?.invalid && signupForm.get('name')?.touched
+        "
+        class="text-danger"
+      >
+        <small *ngIf="signupForm.get('name')?.errors?.['required']"
+          >Name is required.</small
+        >
+      </div>
+    </div>
 
-    <label for="aadharno">Aadhar</label>
-    <input
-      type="number"
-      id="aadharno"
-      placeholder="Enter your aadhar number"
-      required
-    />
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        formControlName="email"
+        type="email"
+        class="form-control"
+        required
+      />
+      <div
+        *ngIf="
+          signupForm.get('email')?.invalid && signupForm.get('email')?.touched
+        "
+        class="text-danger"
+      >
+        <small *ngIf="signupForm.get('email')?.errors?.['required']"
+          >Email is required.</small
+        >
+        <small *ngIf="signupForm.get('email')?.errors?.['email']"
+          >Email must be valid.</small
+        >
+      </div>
+    </div>
 
-    <label for="mobile">Mobile Number</label>
-    <input
-      type="number"
-      placeholder="Enter your aadhar link mobile no"
-      required
-    />
+    <div class="form-group">
+      <label for="mobile">Mobile:</label>
+      <input
+        id="mobile"
+        formControlName="phno"
+        type="tel"
+        class="form-control"
+        required
+      />
+      <div
+        *ngIf="
+          signupForm.get('phno')?.invalid && signupForm.get('phno')?.touched
+        "
+        class="text-danger"
+      >
+        <small *ngIf="signupForm.get('phno')?.errors?.['required']"
+          >Mobile is required.</small
+        >
+        <small *ngIf="signupForm.get('phno')?.errors?.['maxlength']"
+          >Mobile must be a 10-digit number.</small
+        >
+      </div>
+    </div>
 
-    <label for="password">Password</label>
-    <input
-      type="password"
-      id="password"
-      placeholder="Enter your password"
-      required
-    />
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="form-control"
+        required
+      />
+      <div
+        *ngIf="
+          signupForm.get('password')?.invalid &&
+          signupForm.get('password')?.touched
+        "
+        class="text-danger"
+      >
+        <small *ngIf="signupForm.get('password')?.errors?.['required']"
+          >Password is required.</small
+        >
+        <small *ngIf="signupForm.get('password')?.errors?.['minlength']"
+          >Password must be at least 6 characters long.</small
+        >
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="usertype">Type</label>
+      <select name="type" id="type" formControlName="type" required="">
+        <option value="" disabled>Select user type</option>
+        <option value="User">User</option>
+        <option value="Contractor">Contractor</option>
+      </select>
+    </div>
 
-    <button type="submit">Signup</button>
+    <button
+      type="submit"
+      class="btn btn-success"
+      [disabled]="signupForm.invalid"
+    >
+      Sign Up
+    </button>
   </form>
-  <p>Already have an account? <a routerLink="/login">Login here</a></p>
 </div>

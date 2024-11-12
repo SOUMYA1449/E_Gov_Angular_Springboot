@@ -1,0 +1,29 @@
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+
+  /* Each logo wrapper for alignment and spacing */
+  .logo-item {
+    text-align: center;
+    max-width: 150px;
+  }
+
+  /* Logo images styling */
+  .logo-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Logo description text */
+  .logo-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  .invert-color {
+    filter: invert(100%) grayscale(100%);
+  }

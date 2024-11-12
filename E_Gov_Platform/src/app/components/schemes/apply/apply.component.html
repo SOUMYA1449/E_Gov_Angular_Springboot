@@ -1,0 +1,67 @@
+<form [formGroup]="applyForm" (ngSubmit)="onSubmit()">
+  <input type="hidden" [value]="uid" />
+  <h5 class="text-center">{{success}}</h5>
+
+  <div>
+    <label for="sname">Scheme name</label>
+    <input id="sname" formControlName="sname" type="text" />
+  </div>
+
+  <div>
+    <label for="name">Name</label>
+    <input id="name" formControlName="name" type="text" />
+  </div>
+
+  <div>
+    <label for="fname">Father's Name</label>
+    <input id="fname" formControlName="fname" type="text" />
+  </div>
+
+  <div>
+    <label for="aadharno">Aadhar Number</label>
+    <input id="aadharno" formControlName="aadharno" type="text" />
+  </div>
+
+  <div>
+    <label for="dob">Date of Birth</label>
+    <input id="dob" formControlName="dob" type="date" />
+  </div>
+
+  <div>
+    <label for="phno">Phone Number</label>
+    <input id="phno" formControlName="phno" type="text" />
+  </div>
+
+  <div>
+    <label for="gender">Gender</label>
+    <select id="gender" formControlName="gender">
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="address">Address</label>
+    <input id="address" formControlName="address" type="text" />
+  </div>
+
+  <div>
+    <label for="distric">District</label>
+    <input id="distric" formControlName="distric" type="text" />
+  </div>
+
+  <div>
+    <label for="state">State</label>
+    <input id="state" formControlName="state" type="text" />
+  </div>
+
+  <div>
+    <label for="pincode">Pincode</label>
+    <input id="pincode" formControlName="pincode" type="text" />
+  </div>
+
+  <input type="hidden" formControlName="status" value="Pending">
+  <button type="submit">Submit</button>
+</form>

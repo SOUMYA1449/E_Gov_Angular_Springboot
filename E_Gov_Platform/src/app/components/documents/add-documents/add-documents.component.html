@@ -1,8 +1,8 @@
-<div class="form-container">
+<div class="form-container mt-5">
   <div class="form_controler">
     <h2>Add Document</h2>
-    <h6 *>{{ success }}</h6>
-    <form [formGroup]="myForm" (ngSubmit)="successmsg()">
+    <h6 class="text-center btn-wraning">{{ success }}</h6>
+    <form [formGroup]="documentform" (ngSubmit)="onSubmit();successmsg()">
       <label for="id">Document ID</label>
       <input formControlName="documentId" type="text" placeholder="Enter Document ID" required/>
       <label for="type">Document Type</label>
@@ -12,13 +12,11 @@
         <option value="pan">PAN</option>
         <option value="dl">Driving License</option>
       </select>
-      <label for="img">Image</label>
-      <input formControlName="documentImage" type="file" required />
-      <div class="check">
-        <input formControlName="confirmation" type="checkbox" required />
-        <span> Details uploaded by me are correct.</span>
-      </div>
-      <button type="submit" [disabled]="myForm.invalid">Add</button>
+      <input type="hidden"  [value]="uid">
+      <label for="name">Name</label>
+      <input formControlName="name" type="text" required  placeholder="Name on Document"/>
+      
+      <button type="submit" [disabled]="documentform.invalid">Add</button>
     </form>
   </div>
 </div>

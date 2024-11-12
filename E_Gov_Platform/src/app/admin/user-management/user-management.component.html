@@ -1,0 +1,71 @@
+<div class="admin-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h3>Admin Panel</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/adminhome">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/user-management">User Management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/content-management">Content Management</a>
+        </li>
+        
+        
+      </ul>
+    </aside>
+  
+    <!-- Main Content Area -->
+    <main class="content">
+      <!-- Header with Profile and Logout -->
+      <header class="admin-header d-flex justify-content-between align-items-center">
+        <h2>Admin Dashboard</h2>
+        <div class="profile-actions">
+          <span>Welcome, Admin</span>
+          
+        </div>
+      </header>
+  
+      <!-- Dashboard Cards -->
+      <section class="dashboard-cards mt-4 d-flex flex-wrap">
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Total User</h5>
+            <p class="card-text" >{{allUser.length}}</p>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Total Contractors</h5>
+            <p class="card-text">20</p>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Total</h5>
+            <p class="card-text">10</p>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem;">
+          <div class="card-body">
+          <button class="btn btn-primary p-3 m-3" routerLink="/showuser"> Show Users</button>
+          
+          </div>
+        </div>
+      </section>
+  
+      <!-- Recent Activity Section -->
+      <section class="recent-activity mt-4">
+        <h4>Recent Activity</h4>
+        <ul class="list-group">
+          <li class="list-group-item">User JohnDoe logged in</li>
+          <li class="list-group-item">New content published on the homepage</li>
+          <li class="list-group-item">Admin updated user roles</li>
+          <li class="list-group-item">Monthly report generated</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  

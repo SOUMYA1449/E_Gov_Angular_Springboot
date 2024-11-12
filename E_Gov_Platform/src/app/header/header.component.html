@@ -1,18 +1,28 @@
-<div class="top-bar">
-  <div class="left">
+<div class="top-bar d-flex justify-content-between align-items-center p-3">
+  <!-- Left section with logos -->
+  <div class="left d-flex align-items-center">
     <div class="logos">
-      <img src="assets/image/emblem-dark.png" alt="Logo" class="logo" />
+      <img src="assets/image/emblem-dark.png" alt="Logo" class="logo me-3" />
     </div>
-    <div class="govt-of-india">भारत सरकार<br />Government of India</div>
+    <div class="govt-of-india">
+      भारत सरकार<br />Government of India
+    </div>
   </div>
 
-  <div class="ministry-name">
-    मेरा योजना <br />
-    MY Scheme
-  </div> 
+  <!-- Ministry Name -->
+  <div class="ministry-name text-center">
+    मेरा योजना <br /> MY Scheme
+  </div>
+
+
+  
+
   <!-- Login and Signup Buttons -->
-  <div class="auth-buttons">
-    <button class="login-btn" routerLink="/login">Login</button>
-    <button class="signup-btn" routerLink="/signup">Signup</button>
+  <div class="auth-buttons ms-3">
+    <button class="login-btn btn btn-outline-secondary me-2" *ngIf="!name" routerLink="/login">Login</button>
+    <button class="login-btn btn btn-outline-secondary me-2" *ngIf="name" >{{name}}</button>
+    <button class="signup-btn btn btn-outline-primary" *ngIf="!name" routerLink="/signup">Signup</button>
+    <button class="signup-btn btn btn-outline-primary" *ngIf="name" routerLink="/login" (click)="toggle()">LogOut</button>
   </div>
 </div>
+  

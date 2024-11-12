@@ -1,11 +1,124 @@
-<div class="main-payment">
-    <div class="make-payment">
-        <h4>Make Payments</h4>
+<div class="container mt-3">
+  <h2 class="text-center text-success">Payment Portal</h2>
+  <div class="logo-container">
+    <div class="logo-item">
+      <img src="assets/image/rupay-logo.png" alt="RuPay Logo" />
     </div>
-    <div class="payment-history">
-        <h4>Show all payments</h4>
+
+    <div class="logo-item">
+      <img src="assets/image/bhimupi-logo.png" alt="UPI Logo" />
     </div>
-    <div class="bills">
-        <h4>Show all bills</h4>
+
+    <div class="logo-item">
+      <img src="assets/image/upichalega-logo.png" alt="NETC Logo" />
     </div>
+
+    <div class="logo-item">
+      <img
+        src="assets/image/logo.png"
+        class="invert-color"
+        alt="BHIM UPI Logo"
+      />
+    </div>
+  </div>
+
+  <div class="text-center d-flex">
+    <button
+      routerLink="/make-payment"
+      class="btn btn-success btn-lg mx-2 custom-button"
+    >
+      <i class="fas fa-credit-card"></i> Make Payment <br /><small
+        class="text-white"
+        >Proceed to make a new payment for outstanding bills.</small
+      >
+    </button>
+    <br />
+
+    <br /><br />
+
+    <button
+      class="btn btn-secondary btn-lg mx-2 custom-button"
+      routerLink="/history"
+    >
+      <i class="fas fa-eye"></i> Show Payments <br /><small class="text-white"
+        >View a list of all past payments you've made.</small
+      >
+    </button>
+    <br />
+
+    <br /><br />
+    
+      <button
+      *ngIf="type1=='Contractor'"
+        class="btn btn-info btn-lg mx-2 custom-button"
+        routerLink="/bills"
+      >
+        <i class="fas fa-file-invoice"></i> Show All Bills <br /><small
+          class="text-black"
+          >Display a summary of all bills, both paid and pending.</small
+        >
+      </button>
+    
+    <br />
+  </div>
+
+  <div class="d-flex mt-5" style="gap: 15px">
+    <div class="video">
+      <video style="width: 500px" src="assets/image/pay.mp4" controls></video>
+    </div>
+    <div class="about">
+      <ul>
+        <li>
+          <strong>Convenience:</strong> 24/7 availability and faster
+          transactions.
+        </li>
+        <li>
+          <strong>Security:</strong> Encryption technology and fraud detection
+          tools.
+        </li>
+        <li>
+          <strong>Cost-Effectiveness:</strong> Reduced operational costs and
+          lower transaction fees.
+        </li>
+        <li>
+          <strong>Global Reach:</strong> International transactions and
+          multi-currency support.
+        </li>
+        <li>
+          <strong>Improved Cash Flow:</strong> Faster fund availability and
+          recurring payments.
+        </li>
+        <li>
+          <strong>Enhanced Customer Experience:</strong> Streamlined checkout
+          processes and integration with loyalty programs.
+        </li>
+        <li>
+          <strong>Data Insights:</strong> Valuable analytics on customer
+          behavior.
+        </li>
+        <li><strong>Environmentally Friendly:</strong> Reduced paper use.</li>
+        <li>
+          <strong>Flexibility:</strong> Multiple payment options available.
+        </li>
+        <li>
+          <strong>Compliance and Regulation:</strong> Easier record keeping and
+          tax reporting.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card mt-5">
+    <div class="card-body">
+      <h5 class="card-title">Services Available for</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">✔ Make Payments for Projects</li>
+        <li class="list-group-item">✔ View Payment History</li>
+        <li class="list-group-item">✔ Check Pending Payments</li>
+        <li class="list-group-item">✔ Access Bill Details</li>
+        <li class="list-group-item">✔ Contact Support for Assistance</li>
+        <li class="list-group-item">✔ Make Payments for Schemes</li>
+      </ul>
+    </div>
+  </div>
 </div>

@@ -1,9 +1,17 @@
-<div class="container1">
+<div class="page-container">
   <!-- Header Section -->
   <app-header></app-header>
+
   <!-- Navbar Section -->
-  <app-navbar></app-navbar>
+  <app-navbar *ngIf="username != 'admin'"></app-navbar>
+
+  <!-- Main Content Section -->
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <app-footer></app-footer>
+  </footer>
 </div>
-<!-- Main Content Section -->
-<router-outlet></router-outlet>
-<app-footer></app-footer>

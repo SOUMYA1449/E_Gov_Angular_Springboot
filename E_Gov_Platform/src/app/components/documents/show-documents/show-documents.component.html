@@ -1,1 +1,31 @@
-<p>show-documents works!</p>
+<div class="container">
+  <div class="card">
+    <h3 class="text-center text-success">All Document</h3>
+    <h5 class="text-center text-success">{{success}}</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Document Id</th>
+          <th scope="col">Document Name</th>
+          <th scope="col">Name on document</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let documents of allDocument">
+        <tr>
+          <th scope="row">{{ documents.documentId }}</th>
+          <td>{{ documents.documentType }}</td>
+          <td>{{ documents.name }}</td>
+          <td>
+            <button
+              class="btn btn-danger"
+              (click)="selectSchemeForDeletion(documents.id); ondelete()"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

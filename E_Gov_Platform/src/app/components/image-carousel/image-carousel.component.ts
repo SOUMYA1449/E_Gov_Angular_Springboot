@@ -15,5 +15,6 @@ export class ImageCarouselComponent {
     { src: 'assets/image/1-full.webp', alt: 'First slide' },
     { src: 'assets/image/2-full.webp', alt: 'Second slide' },
     { src: 'assets/image/3-full.webp', alt: 'Third slide' },
+    { src: 'assets/image/4-full.webp', alt: 'Third slide' },
   ];
 }

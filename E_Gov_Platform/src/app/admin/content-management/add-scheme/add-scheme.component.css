@@ -1,0 +1,88 @@
+/* Reset some default browser styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the signup form */
+  form {
+    background: white;
+    max-width: 400px; /* Set a maximum width */
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Style for form elements */
+  div {
+    margin-bottom: 15px; /* Space between form elements */
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in total width */
+  }
+  
+  /* Input focus effect */
+  input:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  /* Error messages */
+  small {
+    color: red; /* Error message color */
+    font-size: 0.9em; /* Smaller font size */
+  }
+  
+  /* Submit button */
+  button {
+    background-color: #28841c; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px;
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width */
+    font-size: 16px; /* Font size */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color:  #28841c; /* Darker blue on hover */
+  }
+  
+  /* Disable button style */
+  button:disabled {
+    background-color: #cccccc; /* Gray when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+  }
+  
+
+  .home{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.home button{
+    width: 20%;
+    background-color: #007BFF;
+}

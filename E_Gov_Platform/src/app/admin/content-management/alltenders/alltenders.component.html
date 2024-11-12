@@ -1,0 +1,29 @@
+<div class="container mt-3">
+    <div class="card">
+      
+        <div class="card-body">
+            <h3 class="text-center text-success">All Scheme</h3>
+            <h5 class="text-center text-danger">{{success}}</h5>
+            <table class="table">
+                
+                <thead>
+                  <tr>
+                    <th scope="col">Sid</th>
+                    <th scope="col">Scheme Name</th>
+                    <th scope="col">Scheme Type</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr *ngFor="let scheme of alltender">
+                    <th scope="row">{{scheme.id}}</th>
+                    <td>{{scheme.tname}}</td>
+                    <td>{{scheme.ttype}}</td>
+                    <td ><Button class="btn btn-danger p-2"(click)="selectSchemeForDeletion(scheme.id);onDelete()">Delete</Button></td>
+             
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

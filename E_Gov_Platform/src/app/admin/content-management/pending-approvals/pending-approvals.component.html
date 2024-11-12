@@ -1,0 +1,62 @@
+<div class="container mt-3">
+  <div class="card">
+    <div class="card-body" >
+      <h3 class="text-center text-success">All Scheme</h3>
+      <h5 class="text-center text-danger">{{ success }}</h5>
+      
+      <table class="table" >
+        <thead>
+          <tr>
+            <th scope="col">Sid</th>
+            <th scope="col">Scheme Name</th>
+            <th scope="col">Applicant name</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Status</th>
+            <th scope="col">Phone</th>
+
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let scheme of allApplied">
+          <tr >
+            <th scope="row">{{ scheme.id }}</th>
+            <td>{{ scheme.sname }}</td>
+            <td>{{ scheme.name }}</td>
+            <td>{{ scheme.dob }}</td>
+            <td>{{ scheme.gender }}</td>
+            <td   (click)="setstatus(scheme.status)">{{ scheme.status }}</td>
+            <td>{{ scheme.phno }}</td>
+            
+            <td >
+
+              <Button
+                class="btn btn-danger p-2"
+                (click)="
+                  selectSchemeForDeletion(scheme.id);
+                  onDelete()
+                  
+                "
+                *ngIf="!status"
+                >Delete</Button
+              >
+              <button
+                (click)="
+                  selectSchemeForDeletion(scheme.id);
+                  updateStatus()
+                  
+                "
+                *ngIf="!status"
+                class="btn btn-success p-2"
+              >
+                Approve
+              </button>
+              <h5  *ngIf="status">No Action</h5>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

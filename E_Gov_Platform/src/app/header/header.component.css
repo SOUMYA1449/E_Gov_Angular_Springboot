@@ -55,11 +55,13 @@
   .auth-buttons .login-btn {
     background-color: #10c525;
     color: white;
+    border-radius: 5px 6px;
   }
   
   .auth-buttons .signup-btn {
     background-color: #10c525;
     color: white;
+    border-radius: 5px 6px;
   }
   
   .auth-buttons .login-btn:hover {
@@ -68,6 +70,7 @@
   
   .auth-buttons .signup-btn:hover {
     background-color: #28841c;
+    
   }
   .left{
     display: flex;
