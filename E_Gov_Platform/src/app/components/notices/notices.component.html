@@ -3,10 +3,10 @@
 
   <section class="notice-list">
     <h2>Latest Notices</h2>
-    <div class="notice-card">
-      <h3>E-Medhabruti</h3>
-      <p>Scheme</p>
-      <small>10.02.2024</small>
+    <div class="notice-card" *ngFor="let notice of allNotice.slice().reverse()">
+      <h3>{{notice.noticename}}</h3>
+      <p>{{notice.type}}</p>
+      <small>{{notice.date}}</small>
     </div>
   </section>
 </div>

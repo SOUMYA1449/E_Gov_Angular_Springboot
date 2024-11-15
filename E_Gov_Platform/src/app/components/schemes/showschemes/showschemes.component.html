@@ -1,0 +1,34 @@
+<div class="schemes-section">
+    <!-- Tab Navigation -->
+    <ul class="tabs">
+      <a href="schemes"><li class="tab ">All Schemes</li></a>
+      <a href="allscheme" ><li class="tab active " *ngIf="uid">Applied Scheme</li></a>
+    </ul>
+    </div>
+<div class="container">
+   
+    <div class="card">
+      <h3 class="text-center text-success">All Scheme</h3>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Appclicant Name</th>
+            <th scope="col">Scheme name</th>
+            <th scope="col">Status </th>
+            
+          </tr>
+        </thead>
+        <tbody *ngFor="let scheme of allScheme">
+          <tr>
+            <th scope="row">{{ scheme.name }}</th>
+            <td>{{ scheme.sname }}</td>
+            <td>{{ scheme.status }}</td>
+     
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

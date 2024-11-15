@@ -1,0 +1,23 @@
+<form [formGroup]="applyForm" (ngSubmit)="onSubmit()">
+  <input type="hidden" [value]="uid" />
+  <h3 class="text-center text-success">Apply For Tender</h3>
+  <h5 class="text-center">{{ success }}</h5>
+  <div>
+    <label for="tname">Tender name</label>
+    <input id="tname" formControlName="tname" type="text" />
+  </div>
+  <div>
+    <label for="cname">Contractor Name</label>
+    <input id="cname" formControlName="cname" type="text" />
+  </div>
+  <div>
+    <label for="cid">Contractor ID</label>
+    <input id="cid" formControlName="cid" type="text" />
+  </div>
+  <div>
+    <label for="bamount">Bid Amount</label>
+    <input id="bamount" formControlName="bidAmount" type="text" />
+  </div>
+  <input type="hidden" formControlName="status" value="Pending" />
+  <button type="submit">Submit</button>
+</form>

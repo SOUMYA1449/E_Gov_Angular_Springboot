@@ -10,6 +10,10 @@ export class ShowapplyschemeService {
 
   constructor(private http: HttpClient) {}
 
+  // getSchemeByuser(uid:any){
+  //   const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+  //   return this.http.get<any>(`${this.apiUrl}/user/${uid}`,{headers});
+  // }
   
 
   getAppliedSchemes():Observable<any>{

@@ -56,7 +56,7 @@ export class ApplyComponent {
       this.apply.apply(value, this.uid).subscribe();
       setTimeout(() => {
         this.router.navigate(['/schemes'])
-      }, 100);
+      }, 1000);
       this.success = 'Form Submitted Successfully!';
     } 
   }

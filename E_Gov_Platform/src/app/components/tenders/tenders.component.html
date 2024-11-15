@@ -1,9 +1,10 @@
 <div class="schemes-section">
-    <!-- Tab Navigation -->
-    <ul class="tabs">
-      <a href="tenders"><li class="tab active">All Tenders</li></a>
-      
-    </ul>
+  <!-- Tab Navigation -->
+  <ul class="tabs">
+    <a href="tenders"><li class="tab active ">All Tender</li></a>
+    <a href="allapply" ><li class="tab " *ngIf="user">Applied Tender</li></a>
+  </ul>
+  
   
     
   
@@ -15,7 +16,7 @@
       <div class="scheme-name">
         <h3>{{ scheme.tname }}</h3>
   
-        <button class="apply-button" *ngIf="user">Apply</button>
+        <button class="apply-button" routerLink="/applytender" *ngIf="user">Apply</button>
       </div>
       
       <p class="scheme-state">{{ scheme.ttype }}</p>

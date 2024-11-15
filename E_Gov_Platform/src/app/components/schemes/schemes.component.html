@@ -2,6 +2,7 @@
   <!-- Tab Navigation -->
   <ul class="tabs">
     <a href="schemes"><li class="tab active">All Schemes</li></a>
+    <a href="allscheme" ><li class="tab " *ngIf="user">Applied Scheme</li></a>
   </ul>
 
   <p class="scheme-count">
@@ -13,7 +14,7 @@
       <h3>{{ scheme.sname }}</h3>
 
       <button class="apply-button" *ngIf="user" routerLink="/apply">
-        Apply
+        Register
       </button>
     </div>
 

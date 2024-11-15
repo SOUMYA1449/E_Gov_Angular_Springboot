@@ -1,0 +1,36 @@
+<div class="schemes-section">
+    <!-- Tab Navigation -->
+    <ul class="tabs">
+      <a href="tenders1"><li class="tab ">All Tender</li></a>
+      <a href="allapply1" ><li class="tab active " *ngIf="uid">Applied Tender</li></a>
+    </ul>
+    </div>
+<div class="container">
+   
+    <div class="card">
+      <h3 class="text-center text-success">All Scheme</h3>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Contractor  Name</th>
+            <th scope="col">Contractor  Id</th>
+            <th scope="col">Tender name</th>
+            <th scope="col">Status </th>
+            
+          </tr>
+        </thead>
+        <tbody *ngFor="let tender of allTender">
+          <tr>
+            <th scope="row">{{ tender.cname }}</th>
+            <td>{{ tender.cid }}</td>
+            <td>{{ tender.tname }}</td>
+            <td>{{ tender.status }}</td>
+     
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
